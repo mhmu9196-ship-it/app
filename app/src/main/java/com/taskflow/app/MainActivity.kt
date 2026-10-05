@@ -208,7 +208,7 @@ private fun TaskFlowApp() {
                 AlertDialog(
                     onDismissRequest = { listToDelete = null },
                     title = { Text("מחיקת רשימה", fontWeight = FontWeight.Bold) },
-                    text = { Text("למחוק את הרשימה "${list.title}"? המשימות שבה יימחקו מהרשימות השמורות.") },
+                    text = { Text("למחוק את הרשימה \"${list.title}\"? המשימות שבה יימחקו מהרשימות השמורות.") },
                     confirmButton = {
                         TextButton(onClick = {
                             savedLists = savedLists.filterNot { it.id == list.id }
